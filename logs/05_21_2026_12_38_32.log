@@ -1,0 +1,4 @@
+[ 2026-05-21 12:38:34,432 ] 17 root - INFO - Initiate the data ingestion
+[ 2026-05-21 12:38:36,833 ] 116 root - INFO - Dataframe Shape: (11055, 31)
+[ 2026-05-21 12:38:36,907 ] 87 root - INFO - Performed train test split on dataframe
+[ 2026-05-21 12:38:36,970 ] 107 root - INFO - Train and test files exported

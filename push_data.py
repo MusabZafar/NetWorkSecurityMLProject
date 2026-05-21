@@ -15,17 +15,17 @@ from networkSecurity.logging.logger import logging
 BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
 
-username = os.getenv("MONGO_USERNAME")
-password = os.getenv("MONGO_PASSWORD")
+# username = os.getenv("MONGO_USERNAME")
+# password = os.getenv("MONGO_PASSWORD")
 
-if not username or not password:
-    raise ValueError("MongoDB username or password is missing in .env file")
+# if not username or not password:
+#     raise ValueError("MongoDB username or password is missing in .env file")
 
-username = quote_plus(username)
-password = quote_plus(password)
+# username = quote_plus(username)
+# password = quote_plus(password)
 
-MONGO_DB_URL = f"mongodb+srv://{username}:{password}@cluster0.1jzj3ek.mongodb.net/?appName=Cluster0"
-
+# MONGO_DB_URL = f"mongodb+srv://{username}:{password}@cluster0.1jzj3ek.mongodb.net/?appName=Cluster0"
+MONGO_DB_URL = os.getenv("MONGO_DB_URL")
 ca = certifi.where()
 
 
