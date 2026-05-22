@@ -14,6 +14,9 @@ FILE_NAME: str = "phisingData.csv"
 TRAIN_FILE_NAME: str = "train.csv"
 TEST_FILE_NAME: str = "test.csv"
 
+
+SCHEMA_FILE_PATH=os.path.join("data_schema","schema.yaml")
+
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
 """
